@@ -13,70 +13,150 @@
 
 <body>
     <main>
-        <div>
-            <!-- Navigation bar -->
-            <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-                <a class="navbar-brand" href="index.html">Shared Organizer</a>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+            <a class="navbar-brand" href="index.html">Shared Organizer</a>
 
-                <!-- Nav bar links -->
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html">Home</a>
-                    <a class="nav-item nav-link" href="calendar.html">Calendar</a>
-                    <a class="nav-item nav-link" href="groceries.html">Groceries</a>
-                </div>
+            <!-- Nav bar links -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="calendar.html">Calendar</a>
+                <a class="nav-item nav-link" href="groceries.html">Groceries</a>
+            </div>
 
-                <!-- Login Button -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
-                            Login
-                        </button>
+            <!-- Login Button -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                        Login
+                    </button>
 
-                        <!-- Login Modal -->
-                        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
-                            aria-labelledby="loginModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- Modal login form -->
-                                        <form>
-                                            <!-- Email input form -->
-                                            <div class="form-group">
-                                                <label for="emailInput">Email address</label>
-                                                <input type="email" class="form-control" id="emailInput"
-                                                    aria-describedby="emailHelp" placeholder="Enter email">
-                                            </div>
+                    <!-- Login Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                        aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Modal login form -->
+                                    <form>
+                                        <!-- Email input form -->
+                                        <div class="form-group">
+                                            <label for="emailInput">Email address</label>
+                                            <input type="email" class="form-control" id="emailInput"
+                                                aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
 
-                                            <!-- Password input form -->
-                                            <div class="form-group">
-                                                <label for="passwordInput">Password</label>
-                                                <input type="password" class="form-control" id="passwordInput"
-                                                    placeholder="Password">
-                                            </div>
+                                        <!-- Password input form -->
+                                        <div class="form-group">
+                                            <label for="passwordInput">Password</label>
+                                            <input type="password" class="form-control" id="passwordInput"
+                                                placeholder="Password">
+                                        </div>
 
-                                            <!-- Login button -->
-                                            <button type="submit" class="btn btn-primary">Login</button>
-                                        </form>
-                                        Don't have an account? <a href="account-creation.html">Create one here</a>
-                                    </div>
+                                        <!-- Login button -->
+                                        <button type="submit" class="btn btn-primary">Login</button>
+                                    </form>
+                                    Don't have an account? <a href="account-creation.html">Create one here</a>
+                                </div>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                        <!-- <button type="button" class="btn btn-primary">Login</button> -->
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Login</button> -->
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                    </li>
-                </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main page content -->
+        <div class="container-fluid">
+            <div class="row ">
+
+                <!-- Upcoming events -->
+                <div class="col-lg-6 pt-3">
+
+                    <h1 class="mb-4">Upcoming Event</h1>
+
+                    <!-- Today card -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Today</h6>
+                            <ul>
+                                <li>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Placeat quibusdam sapiente itaque officiis, laborum doloremque praesentium earum
+                                        provident soluta temporibus maiores alias aperiam at dolore hic. Unde error
+                                        nulla dignissimos!</p>
+                                </li>
+
+                                <li>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Placeat quibusdam sapiente itaque officiis, laborum doloremque praesentium earum
+                                        provident soluta temporibus maiores alias aperiam at dolore hic. Unde error
+                                        nulla dignissimos!</p>
+                                </li>
+
+                                <li>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Placeat quibusdam sapiente itaque officiis, laborum doloremque praesentium earum
+                                        provident soluta temporibus maiores alias aperiam at dolore hic. Unde error
+                                        nulla dignissimos!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tomorrow card -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Tomorrow</h6>
+                            <ul>
+                                <li>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Placeat quibusdam sapiente itaque officiis, laborum doloremque praesentium earum
+                                        provident soluta temporibus maiores alias aperiam at dolore hic. Unde error
+                                        nulla dignissimos!</p>
+                                </li>
+
+                                <li>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Placeat quibusdam sapiente itaque officiis, laborum doloremque praesentium earum
+                                        provident soluta temporibus maiores alias aperiam at dolore hic. Unde error
+                                        nulla dignissimos!</p>
+                                </li>
+
+                                <li>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Placeat quibusdam sapiente itaque officiis, laborum doloremque praesentium earum
+                                        provident soluta temporibus maiores alias aperiam at dolore hic. Unde error
+                                        nulla dignissimos!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grocery list-->
+                <div class="col-lg-6 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- FOOTER -->
